@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .biodata-container {
+            width: 40%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .biodata-container h1 {
+            color: #6a1b9a;
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Center the title */
+            align-items: center; /* Center align items vertically */
+            margin-bottom: 20px; /* Add space below the title */
+            position: relative; /* Position relative for absolute positioning of button */
+        }
+
+        .triangle-button {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 25px solid #1a1422;
+            transform: rotate(90deg); /* Rotates the triangle */
+            cursor: pointer;
+            transition: transform 0.3s;
+            position: absolute; /* Position the button absolutely */
+            right: 0; /* Align it to the right */
+            top: 50%; /* Vertically center it */
+            transform: translateY(-50%) rotate(90deg); /* Center and rotate */
+        }
+
+        .triangle-button:hover {
+            transform: translateY(-50%) rotate(90deg) scale(1.1); /* Enlarges slightly on hover */
+        }
+
+        .image-square {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 15%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-square img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="biodata-container">
+        <h1>
+            My Biodata
+            <a href="myQualification.html">
+                <button class="triangle-button"></button>
+            </a>
+            
+        </h1>
+        
+        <div class="image-square">
+            <img src="image/20.jpg" alt="Profile Picture">
+        </div>
+
+        <table>
+            <tr>
+                <th>Full Name</th>
+                <td>Siti Sarah Raihanah Binti Azizan</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>2nd May 2004</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <th>Nationality</th>
+                <td>Malaysian</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>sarahraihanah04@gmail.com</td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>014 - 555 1455</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>No.4 Jalan Selaseh 6, Taman Selaseh,<br>68100 Batu Caves, Selangor</td>
+            </tr>
+            <tr>
+                <th>Hobbies</th>
+                <td>
+                    <ul>
+                        <li>Cooking</li>
+                        <li>Playing Games</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Goals</th>
+                <td>
+                    <ul>
+                        <li>Become Software Developer</li>
+                        <li>Own GTR R35 and Corvette</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <footer>
+            Siti Sarah Raihanah Binti Azizan.  &copy; 2024 
+        </footer>
+    </div>
+</body>
+</html>
