@@ -6,6 +6,7 @@
     <title>Personal Information</title>
     <style>
         body {
+            background-image: url('image/wallpaper1.jpg'); 
             font-family: Arial, sans-serif;
             background-color: #f0f8ff;
             margin: 0;
@@ -21,7 +22,13 @@
             background-color: white;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+            backdrop-filter: blur(5px); /* Blur effect on the background behind the container */
+            -webkit-backdrop-filter: blur(10px); /* Safari support */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
+            border: 10px solid rgba(255, 255, 255,s 0.3);
+            
+            
         }
 
         .biodata-container h1 {
@@ -74,14 +81,19 @@
         }
 
         th, td {
+            background:rgba(173, 216, 230, 0.5);
             padding: 10px;
             border-bottom: 1px solid #ddd;
         }
 
         th {
-            background-color: #6a1b9a;
-            color: white;
-            text-align: left;
+        background: rgba(106, 27, 154, 0.4); /* Semi-transparent purple */
+        color: white;
+        text-align: left;
+        padding: 10px;
+        backdrop-filter: blur(8px); /* Blur effect */
+        -webkit-backdrop-filter: blur(8px); /* Safari support */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Optional border */
         }
 
         footer {
@@ -102,7 +114,7 @@
         </h1>
         
         <div class="image-square">
-            <img src="20.jpg" alt="Profile Picture">
+            <img src="image/20.jpg" alt="Profile Picture">
         </div>
 
         <table>
@@ -124,15 +136,15 @@
             </tr>
             <tr>
                 <th>Email</th>
-                <td>sarahraihanah04@gmail.com</td>
+                <td>kenshinraa@gmail.com</td>
             </tr>
             <tr>
                 <th>Phone Number</th>
-                <td>014 - 555 1455</td>
+                <td>014 - 888 8889</td>
             </tr>
             <tr>
                 <th>Address</th>
-                <td>No.4 Jalan Selaseh 6, Taman Selaseh,<br>68100 Batu Caves, Selangor</td>
+                <td>No.400 Jalan Terizla 85, Taman Argus,<br>99999 Minotaur, Selangor</td>
             </tr>
             <tr>
                 <th>Hobbies</th>
